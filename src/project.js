@@ -1910,9 +1910,7 @@ window.__require = function e(t, n, o) {
                 }, t.prototype.update = function(e) {
                     this.UpdateScoreLabel(e), this.lerpCtrl && this.lerpNumFunc(this.passlevelYQ), this.levelPanel.children[1].getComponent(cc.Label).string = s.default.Instance.GetLevel().toString()
                 }, t.prototype.adsButtonFunc = function() {
-
-                    console.log(b.default.Instance.targetFruit.destroy())
-                    console.log(b.default.Instance.targetFruit.setPosition(1000,-200))
+                    b.default.Instance.targetFruit.destroy()
                     b.default.Instance.createOneFruit(Math.floor(Math.random()*6))
                 }, t.prototype.TestPasslevel = function() {
                     var e = this;
