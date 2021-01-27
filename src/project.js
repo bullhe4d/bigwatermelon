@@ -1768,16 +1768,16 @@ window.__require = function e(t, n, o) {
             play: function() {
                 console.log(1);
                 var e = this;
-                adBreak({
-                    type: "next",
-                    name: "restart-game",
-                    beforeBreak: function() {
-                        e.enableButtons()
-                    },
-                    afterBreak: function() {
-                        e.enableButtons()
-                    }
-                })
+                // adBreak({
+                //     type: "next",
+                //     name: "restart-game",
+                //     beforeBreak: function() {
+                //         e.enableButtons()
+                //     },
+                //     afterBreak: function() {
+                //         e.enableButtons()
+                //     }
+                // })
             },
             enableButtons: function() {},
             addTouchEvents: function() {
@@ -1910,6 +1910,7 @@ window.__require = function e(t, n, o) {
                 }, t.prototype.update = function(e) {
                     this.UpdateScoreLabel(e), this.lerpCtrl && this.lerpNumFunc(this.passlevelYQ), this.levelPanel.children[1].getComponent(cc.Label).string = s.default.Instance.GetLevel().toString()
                 }, t.prototype.adsButtonFunc = function() {
+                    if(b.default.Instance.targetFruit.name==='') return;
                     b.default.Instance.targetFruit.destroy()
                     b.default.Instance.createOneFruit(Math.floor(Math.random()*6))
                 }, t.prototype.TestPasslevel = function() {
