@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>合成大西瓜</title>
+    <title>合成科大</title>
 
     <!--http://www.html5rocks.com/en/mobile/mobifying/-->
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
@@ -37,26 +37,12 @@
     <!--<link rel="apple-touch-icon" href=".png" />-->
     <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
-
-    <!-- <script>
-        pushHistory();
-        window.addEventListener("popstate", function(e) {
-
-        }, false);
-        function pushHistory() {
-            var state = {
-                title: "",
-                url: window.location.href
-            };
-            window.history.pushState(state, state.title, state.url);
-        }
-    </script> -->
     <script type="text/javascript">
         var ua = navigator.userAgent.toLowerCase(); //获取判断用的对象
         //判断是否是微信下访问
         if (ua.match(/MicroMessenger/i) == "micromessenger") {
             // if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-            location.href = "https://mp.weixin.qq.com/s/m0U0L-vnD0Gu8aPJ2vcPoA";
+            location.href = "https://hkust.edu.hk/";
             // }               
         }
     </script>
@@ -71,10 +57,6 @@
     <div id="canvasDiv" style="width:100%;height:100%;">
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
 
-        <video id="contentElement" style="display:none;position: absolute;top:0px;left: 0px;">
-                <source src="http://rmcdn.2mdn.net/Demo/vast_inspector/android.mp4"></source>
-                <source src="http://rmcdn.2mdn.net/Demo/vast_inspector/android.webm"></source>
-      </video>
         <div id="block-Box" style="display:block;width:100%;height:100%;"></div>
     </div>
 
@@ -95,21 +77,9 @@
         <img src="res/loading.gif" width="7%" height="7%" />
     </div>
 
-    <!-- 判断浏览器是否屏蔽广告 -->
-    <script src="http://demo.jb51.net/js/2015/adview_pic_cpc_cpm_cpa_guanggao_gg_ads_300x250.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        var killAdT = typeof(killads);
-        <!-- if (typeof(killads)=='undefined'){ -->
-        <!-- alert('广告被过滤'); -->
-        <!-- } -->
-    </script>
-
-
-
-
     <!--<div align="center" style="font-size: 10px;color: dimgrey">advertisement</div>-->
 
-    <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+    <!-- <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script> -->
     <script type="text/javascript" src="ads.js"></script>
 
     <script src="src/settings.js" charset="utf-8"></script>
@@ -129,19 +99,13 @@
             //        console.log("window.navigator.language",window.navigator.language);
 
             if (window.navigator.language == "zh-CN" || window.navigator.language == "zh-cn") {
-                document.title = "小游戏：合成大西瓜";
+                document.title = "小游戏：合成科大";
             } else if (window.navigator.language == "zh-TW") {
-                document.title = "小遊戲：合成大西瓜";
+                document.title = "小遊戲：合成科大";
             } else if (window.navigator.language == "zh-HK") {
-                document.title = "小遊戲：合成大西瓜";
-            } else if (window.navigator.language == "ko-KR") {
-                document.title = "작은 놀이：큰 수박 을 합성 하 다";
-            } else if (window.navigator.language == "ja-JP") {
-                document.title = "ミニゲーム：合成スイカ";
-            } else if (window.navigator.language == "th-TH") {
-                document.title = "เกมเล็กๆ：แตงโมสังเคราะห์";
+                document.title = "小遊戲：合成科大";
             } else {
-                document.title = "Little game：Synthetic watermelon";
+                document.title = "Little game：Synthesize HKUST";
             }
 
 
@@ -231,50 +195,9 @@
         /*setTimeout("ShowBannerAD()","2000");*/
     </script>
 
-
-
-
-
     <script src="src/settings.js" charset="utf-8"></script>
 
     <script src="main.js" charset="utf-8"></script>
-
-
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <!-- 暴力扣篮 -->
-    <!-- <ins class="adsbygoogle"
-      style="position:absolute;border-top:5px #f0f0f1 solid;background:#f0f0f1;bottom:0px;z-index:1000;display:inline-block;min-width:320px;max-width:970px;width:100%;height:60px"
-     data-ad-client="ca-pub-3932234672445376"
-     data-ad-slot="7048809290"
-     ></ins>
-<script>
-	 var ads = document.getElementsByClassName('adsbygoogle')[0]; 
-
-	 if (document.body.clientHeight > 700){  
-	 	ads.style.height = 80+'px'; 
-	 }else{     
-	 	ads.style.height = 60+'px';    
-	 }
-    
-</script>
-
-<script>
-	function ShowBannerAD(){
-		(adsbygoogle = window.adsbygoogle || []).push({});
-	}
-	
-</script> -->
-
-    <script async data-ad-client="ca-pub-3932234672445376" data-ad-channel="7171445254" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
-    </script>
-
-    <script>
-        window.adsbygoogle = window.adsbygoogle || [];
-        const adBreak = function(o) {
-            adsbygoogle.push(o);
-        }
-    </script>
-
 
     <script type="text/javascript">
         (function() {
